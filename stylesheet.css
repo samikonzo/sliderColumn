@@ -1,0 +1,30 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+p{	
+	width: 300px;
+	margin: auto;
+	column-count: 3;
+	column-gap:100px;
+	column-rule: 4px dashed lightblue;
+
+}
+
+
+.slider{
+	position: absolute;
+	width: 200px;
+	height: 10px;
+	border: 1px solid red;
+	box-sizing: border-box;
+}
+.slider__marker{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border: 1px solid red;
+	box-sizing: border-box;
+}
