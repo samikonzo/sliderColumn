@@ -1,0 +1,7 @@
+Вынести slider-h:
+1)В html указывается только <div class="slider-h class1 class2 ..."></div>
+1)В html указывается только <div class="slider-v class1 class2 ..."></div>
+2)В html подлючается script с sliders, который сам находит шаблоны в своих html
+3)css прячется для каждого свой
+4)значение слайдера получается через slider.value
+
