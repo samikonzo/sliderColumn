@@ -1,6 +1,10 @@
 'use strict'
 var l = console.log
 
+var slider = document.querySelector('.slider');
+slider.changeValue = function(value){
+	document.querySelector('p').style['column-gap'] = (10 + 300 * value/100 )+ 'px'  
+}
 
 
 document.querySelectorAll('.slider').forEach(slider => {
@@ -9,8 +13,9 @@ document.querySelectorAll('.slider').forEach(slider => {
 	})
 
 	$(slider).on('newValue', function(e){
-		var value = e.detail.value;
-		this.dataset.percent = value.toFixed(1) + '%';
+		if(this.changeValue) this.changeValue(e.detail.value);
+		/*var value = e.detail.value;
+		this.dataset.percent = value.toFixed(1) + '%';*/
 	})
 })
 
