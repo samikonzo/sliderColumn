@@ -105,7 +105,7 @@
 			currentPercent = ($(marker).position().left - minLeft) / maxLeft * 100;
 
 		//drag n drop
-		$(marker).on('mousedown', function(e){
+		$(elem).on('mousedown', function(e){
 			e.preventDefault();
 			draggedFlag = true;
 			marker.offsetX = e.clientX - marker.getBoundingClientRect().left;
