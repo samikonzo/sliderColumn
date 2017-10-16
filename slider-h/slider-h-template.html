@@ -1,0 +1,16 @@
+<!-- <div class="slider-h sliderClass"> sliderName </div> -->
+
+
+<script type="text/template" id="slider-h-template">
+
+	<div class="slider-h <%=sliderClass%>">
+		
+		<% if(sliderName != undefined){ %> 
+			<div class="slider-h__name <%=sliderClass%>__name"><%=sliderName%></div>  
+		<% }%>
+		
+		<div class="slider-h__marker <%=sliderClass%>__marker"></div>
+		
+	</div>
+
+</script>
