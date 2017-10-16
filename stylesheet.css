@@ -4,27 +4,38 @@ body{
 	height: 100%;
 }
 
-p{	
-	width: 300px;
-	margin: auto;
-	column-count: 3;
-	column-gap:100px;
-	column-rule: 4px dashed lightblue;
+
+header, footer, .layout, .column-1, .column-2, .column-3{
 
 }
 
+header{
+	height: 100px;
+}
 
-.slider{
-	position: absolute;
-	width: 200px;
-	height: 10px;
-	border: 1px solid red;
+.layout{
+	width:  100%;
+	min-width: 100px;
+	margin: 0 auto;
+}
+.column-1, .column-2, .column-3{
+	width:  32%;
+	/* height: 750px; */
+	padding: 20px;
+	float: left;
+	border:  1px dashed;
 	box-sizing: border-box;
 }
-.slider__marker{
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border: 1px solid red;
-	box-sizing: border-box;
+
+.column-2, .column-3{
+	margin-left: 1%;
+}
+
+
+
+
+
+footer{
+	height: 100px;
+	clear: both;
 }
