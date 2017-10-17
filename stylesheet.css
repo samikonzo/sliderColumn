@@ -6,36 +6,35 @@ body{
 
 
 header, footer, .layout, .column-1, .column-2, .column-3{
-
+	border:  1px dashed;
 }
 
 header{
 	height: 100px;
+	text-align: center;
+	line-height: 100px;
 }
-
-.layout{
-	width:  100%;
-	min-width: 100px;
-	margin: 0 auto;
-}
-.column-1, .column-2, .column-3{
-	width:  32%;
-	/* height: 750px; */
-	padding: 20px;
-	float: left;
-	border:  1px dashed;
-	box-sizing: border-box;
-}
-
-.column-2, .column-3{
-	margin-left: 1%;
-}
-
-
-
-
 
 footer{
 	height: 100px;
 	clear: both;
+	text-align: center;
+	line-height: 100px;
 }
+
+.layout{
+	width:  80%;
+	min-width: 100px;
+	margin: 0 auto;
+}
+.column{
+	width: 100%;
+	column-count: 3;
+	column-rule: 3px solid red;
+	column-gap: 40px;
+}
+
+
+
+
+
