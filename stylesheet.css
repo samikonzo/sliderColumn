@@ -24,25 +24,29 @@ footer{
 
 .flex-container{
 	width:  80%;
-	height: 50%;
+	height: 700px;
 	border:  1px solid;
 	margin: auto;
 
 
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: stretch;
-	align-items: center;
+	justify-content: space-around;
+	align-items: stretch;
 	align-content: stretch;
 }
 
 .flex-block{
-	margin: 5px;
 	min-width: 100px;
 	padding:  20px;
 	border:  1px dashed red;
 	box-sizing: border-box;
-
+	
 	flex-grow: 1;
+}
+
+.flex-block:nth-child(odd){
+	flex-basis: 3px;
+	background: rgba(220, 40, 40, 0.3);
 }
 
