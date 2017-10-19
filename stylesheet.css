@@ -2,51 +2,19 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	background: rgb(240, 240, 240);
 }
 
 
-header, footer, .layout, .column-1, .column-2, .column-3{
+header, footer, main{
 	border:  1px dashed;
 }
 
 header{
-	height: 100px;
-	text-align: center;
-	line-height: 100px;
+
 }
 
 footer{
-	height: 100px;
-	clear: both;
-	text-align: center;
-	line-height: 100px;
-}
 
-.flex-container{
-	width:  80%;
-	height: 700px;
-	border:  1px solid;
-	margin: auto;
-
-
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: stretch;
-	align-content: stretch;
-}
-
-.flex-block{
-	min-width: 100px;
-	padding:  20px;
-	border:  1px dashed red;
-	box-sizing: border-box;
-	
-	flex-grow: 1;
-}
-
-.flex-block:nth-child(odd){
-	flex-basis: 3px;
-	background: rgba(220, 40, 40, 0.3);
 }
 
