@@ -16,7 +16,9 @@ body{
 	width: 100%;
 	max-width: 960px;
 	border: 1px dashed;
+	padding: 10px;
 	margin: auto;
+	overflow: hidden;
 
 	display: flex;
 	flex-flow: row wrap;
@@ -27,17 +29,20 @@ body{
 
 .big-box{
 	/* max-width: 430px; */
-	flex: 1 0 430px;
+	flex: 2 0 200px;
+	border: 1px dashed red;
 }
 
 .side-box{
 	padding: 15px;
-	flex: none;
+	flex: 1 1 200px;
 	/* display: flex; */
+	border: 1px dashed blue;
 }
 
 .small-box{
 	margin: 10px 0;
 	max-width: 200px;
+	flex: 1 0 100px;
 	word-wrap: break-word;
 }
